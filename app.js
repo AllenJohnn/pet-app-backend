@@ -46,7 +46,7 @@ app.post("/add-data", async (req, res) => {
     await PetBoarding.create(req.body);
 
     res.json({
-      status: "Pet Registered Successfully",
+      status: "Success",
     });
   } catch (error) {
     res.status(500).json({
